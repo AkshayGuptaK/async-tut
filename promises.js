@@ -81,6 +81,9 @@ function makeThreeRequestsParallelWithPromises (reqOne, reqTwo, reqThree) {
 
 //makeThreeRequestsParallelWithPromises('requestOne', 'requestTwo', 'requestThree')
 
+// async/await is syntactic sugar which allows asynchronous code to be written in a synchronous style
+// async causes the function to return a promise which resolves to the return value of the function
+// this feature is implemented under the hood using promises and generators
 
 async function makeThreeRequestsWithAsyncAwait (reqOne, reqTwo, reqThree) {
   let output = []
